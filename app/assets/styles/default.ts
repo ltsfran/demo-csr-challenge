@@ -1,6 +1,6 @@
 export const defaultStyle = `
   ::-webkit-input-placeholder {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:14px;
     color:#4A4A4A;
   }
@@ -10,7 +10,7 @@ export const defaultStyle = `
     padding:0;
   }
   body, html {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #4A4A4A;
     font-size: 14px;
     height: 100%;
