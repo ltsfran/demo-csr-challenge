@@ -1,7 +1,8 @@
 import React from 'react';
+import { LoginFormFeature } from './loginForm';
 
 export const Login: React.FC = () => (
-  <React.Fragment>Login</React.Fragment>
+  <LoginFormFeature />
 );
 
 Login.displayName = 'Login';

@@ -9,10 +9,11 @@ export const defaultStyle = `
     margin:0;
     padding:0;
   }
-  body {
+  body, html {
     font-family: Arial, sans-serif;
     color: #4A4A4A;
     font-size: 14px;
+    height: 100%;
   }
   a {
     color: #888;
@@ -35,5 +36,9 @@ export const defaultStyle = `
     overflow: auto;
     padding: 1em 1.5em;
     word-wrap: break-word;
+  }
+
+  #root {
+    height: 100%;
   }
 `;
