@@ -19,10 +19,12 @@ const fetchUserSuccess = (data: UserModel) => ({
 export const fetchUser = (values, history) => {
   return async dispatch => {
     dispatch(fetchUserRequest());
-    console.log('llega 1', values);
     try {
       const data = await userService.getData(values);
       dispatch(fetchUserSuccess(data));
+      sessionStorage.setItem('name', data.user.user.name);
+      sessionStorage.setItem('token', data.user.user.token);
+      history.push('/createitem');
     } catch(error) {
       dispatch(fetchUserFailure(error.message));
     }

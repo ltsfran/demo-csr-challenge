@@ -29,3 +29,7 @@ export const FormStyled = styled.form`
   padding: 25px;
   max-width: 300px;
 `;
+
+Wrapper.displayName = 'Wrapper';
+Content.displayName = 'Content';
+FormStyled.displayName = 'FormStyled';
